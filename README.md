@@ -10,3 +10,24 @@ Os recursos suportados pelo framework ESP-ADF documentados mais precisamente no 
 https://github.com/espressif/esp-adf/tree/master
 
 
+## Hardware
+<div align="center"><img src="docs/_static/esp32-lyrat-v4.3-layout-with-wrover-e-module.jpg" alt ="ESP-32-Lyrat-v4.3" align="center"/></div>
+
+## Hands-On
+A aplicação demonstrada nesse exemplo recebe e transmite áudio via Bluetooth para um dispositivo (ex: Smartphone).
+
+É capaz de atender/desligar ligações e controlar mídias.
+
+Foi utilizado o A2DP bluetooth profile junto com HFP profile para desenvolvimento dessa aplicação
+
+## Configurando o ambiente de desenvolvimento
+Para este exemplo foi utilizado as seguintes ferramentas e frameworks:
+
+- PC com Linux Ubuntu 20.04.2 LTS
+- ESP-IDF release/v4.4
+- ESP-ADF master
+- Dev board Lyrat V4.3
+
+
+
+
