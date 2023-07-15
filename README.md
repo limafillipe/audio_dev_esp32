@@ -27,12 +27,23 @@ A aplicação demonstrada nesse exemplo recebe e transmite áudio via Bluetooth 
 Foi utilizado o A2DP bluetooth profile junto com HFP profile para desenvolvimento dessa aplicação
 
 ## Configurando o ambiente de desenvolvimento
-Para este exemplo foi utilizado as seguintes ferramentas e frameworks:
+Este exemplo será mais focado na configuração do framework ESP-ADF que depende do ESP-IDF já amplamente difundido :
 
 - PC com Linux Ubuntu 20.04.2 LTS
 - ESP-IDF release/v4.4
 - ESP-ADF master
 - Dev board Lyrat V4.3
+
+### Passo 1 - configurando ESP-IDF
+Para instalar e configurar corretamente o framenwork ESP-IDF basta seguir a documentação oficial:
+
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html
+
+Se atentar a versão que é compatível com o ESP-ADF:
+
+https://espressif-docs.readthedocs-hosted.com/projects/esp-adf/en/latest/get-started/index.html
+
+### Passo 2 - configurar o ESP-ADF
 
 
 
