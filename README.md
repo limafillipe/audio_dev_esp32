@@ -161,6 +161,7 @@ Go to the project directory and run:
   idf.py build
 ```
 #### Testando as configurações
+Vamos apens abrir as configurações do projeto com a finalidade de validar as configurações feitas previamente, se o menuconfig abrir corretamente podemos seguir com as configurações do ESP-ADF.
 
 ```
 luiz@luiz-Inspiron-5447:~/esp/esp-idf$ ls
