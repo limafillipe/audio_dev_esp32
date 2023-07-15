@@ -186,19 +186,19 @@ Loading defaults file /home/luiz/esp/esp-idf/examples/get-started/blink/sdkconfi
 ```
 #### Menuconfig
 
-<div align="center"><img src="docs/_static/Screenshot from 2023-07-15 01-38-51.png" alt ="Menuconfig" align="center"/></div>
+<div align="center"><img src="docs/_static/idf_menuconfig.png" alt ="Menuconfig" align="center"/></div>
 
 ### Passo 2 - configurar o ESP-ADF
 Após a configuração do ESP-IDF vamos clonar e configurar o ESP-ADF...
 
-#### Clonando o repositório
+#### 2.1 Clonando o repositório
 ```
 cd ~/esp
 git clone --recursive https://github.com/espressif/esp-adf.git
 
 ```
 
-#### Configurando o ADF_PATH
+#### 2.2 Configurando o ADF_PATH
 ```
 export ADF_PATH=~/esp/esp-adf
 ```
@@ -245,7 +245,38 @@ Loading defaults file /home/luiz/esp/esp-adf/examples/get-started/pipeline_a2dp_
 /home/luiz/esp/esp-adf/examples/get-started/pipeline_a2dp_sink_and_hfp/sdkconfig.defaults:14 CONFIG_HFP_AUDIO_DATA_PATH_HCI was replaced with CONFIG_BT_HFP_AUDIO_DATA_PATH_HCI
 Loading defaults file /home/luiz/esp/esp-adf/examples/get-started/pipeline_a2dp_sink_and_hfp/sdkconfig.defaults.esp32...
 ```
-#### Menuconfig
+#### 2.3 Menuconfig
+
+<div align="center"><img src="docs/_static/adf_menuconfig.png" alt ="Menuconfig" align="center"/></div>
 
 
+#### 2.4 Audio Hal
+Verifique a versão do hardware utilizado, no caso estamos utilizado a Lyrat V4.3
+
+<div align="center"><img src="docs/_static/audio_hal_menucondig.png" alt ="Menuconfig" align="center"/></div>
+
+#### 2.5 Codec
+Verifique se o codec usado na placa está contemplado na configuração abaixo, nessa versão de placa usa-se o ES8388.
+
+<div align="center"><img src="docs/_static/codec_config.png" alt ="Menuconfig" align="center"/></div>
+
+
+#### 2.6  SPI flash driver
+Marcar a primeira opção para verificar a escrita da SPI na flash, tive muitos problemas por esta opção estar desabilitada.
+
+<div align="center"><img src="docs/_static/spi_flash_driver_menucondig.png" alt ="Menuconfig" align="center"/></div>
+
+#### 2.6 Compilando
+```
+luiz@luiz-Inspiron-5447:~/esp/esp-adf/examples/get-started/pipeline_a2dp_sink_and_hfp$ idf.py build
+```
+Caso seja a primeira compilação o processo pode demorar alguns minutos, dependendo do PC.
+
+#### 2.7 Gravando a aplicação na placa
+
+Coloque a placa no modo bootloader, no caso da Lyrat temos que segurar o botão "boot" e precionar o "rst" com o "boot" pressionado.
+Agora podemos enviar a imagem.
+```
+luiz@luiz-Inspiron-5447:~/esp/esp-adf/examples/get-started/pipeline_a2dp_sink_and_hfp$ idf.py -p /dev/ttyUSB0 flash
+```
 
