@@ -1,10 +1,10 @@
-# Desenvolvendo aplicações para audio com o ESP32
+# Desenvolvendo aplicações para áudio com o ESP32
 
 ## ESP-ADF x ESP-IDF 
 ### _ESP-ADF (Espressif Audio Development Framework)_
 O ESP-ADF (Espressif Audio Development Framework) é um framework de desenvolvimento de software de código aberto desenvolvido pela Espressif. Foi projetado especificamente para criar aplicações de áudio em dispositivos baseados no ESP32, uma plataforma de microcontrolador de baixo custo e baixo consumo de energia.
 
-O ESP-ADF fornece uma variedade de componentes e bibliotecas de software para facilitar o desenvolvimento de aplicativos de áudio. Ele oferece suporte para recursos como reprodução de áudio, gravação de áudio, processamento de áudio em tempo real, reconhecimento de voz e muito mais.
+O ESP-ADF fornece uma variedade de componentes e bibliotecas de software para facilitar o desenvolvimento de aplicativos de áudio. Ele oferece suporte para recursos como reprodução e gravação de áudio, assim como processamento em tempo real, reconhecimento de voz e muito mais.
 
 Os recursos suportados pelo framework ESP-ADF documentados mais precisamente no link:
 https://github.com/espressif/esp-adf/tree/master
@@ -35,7 +35,7 @@ Este exemplo será mais focado na configuração do framework ESP-ADF que depend
 - Dev board Lyrat V4.3
 
 ### Passo 1 - configurando ESP-IDF
-Para instalar e configurar corretamente o framenwork ESP-IDF basta seguir a documentação oficial:
+Para instalar e configurar corretamente o framework ESP-IDF basta seguir a documentação oficial:
 
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html
 
